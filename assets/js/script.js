@@ -20,7 +20,7 @@ function division(number1, number2) {
 
 
 
-let choose = parseInt(prompt("Quelle opération voulez-vous choisir ? " + " 1-addition " + " 2-soustraction " + " 3-multiplication " + " 4-division " + " 5-quitter " + "Entrez un chiffre entre 1 et 5"))
+let choose = parseInt(prompt("Quelle opération voulez-vous choisir ? "+ " (Entrez un chiffre entre 1 et 5) " + " 1-addition " + " 2-soustraction " + " 3-multiplication " + " 4-division " + " 5-quitter " ))
 
 switch (choose) {
     case 1:
@@ -28,6 +28,7 @@ switch (choose) {
         break;
     case 2:
         console.log("soustraction");
+        break;
     case 3:
         console.log("multiplication");
         break;
@@ -45,19 +46,20 @@ let number2 = parseFloat(prompt("Entrez le second nombre :"))
 console.log(number1);
 console.log(number2);
 
-resultat=addition(number1, number2)
-console.log(resultat);
 
-resultat=soustraction(number1, number2)
-console.log(resultat);
-
-resultat=multiplication(number1, number2)
-console.log(resultat);
-
-
-resultat=division(number1, number2)
-console.log(resultat);
-
+if(choose ==1){
+     resultat1 = addition(number1, number2)
+     console.log(resultat1);
+}else if(choose ==2){
+    resultat2 =soustraction(number1, number2)
+    console.log(resultat2);
+}else if(choose ==3){
+    resultat3=multiplication(number1, number2)
+    console.log(resultat3);
+}else if(choose ==4){
+    resultat4=division(number1, number2)
+    console.log(resultat4);
+}
 
 
 
