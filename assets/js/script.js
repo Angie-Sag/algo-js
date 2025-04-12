@@ -18,7 +18,8 @@ function division(number1, number2) {
     return somme
 }
 
-
+let continuer = true
+while (continuer){
 
 let choose = parseInt(prompt("Quelle opération voulez-vous choisir ? "+ " (Entrez un chiffre entre 1 et 5) " + " 1-addition " + " 2-soustraction " + " 3-multiplication " + " 4-division " + " 5-quitter " ))
 
@@ -59,8 +60,12 @@ if(choose ==1){
 }else if(choose ==4){
     resultat4=division(number1, number2)
     console.log(resultat4);
+
 }
 
 
+
+}
+    
 
 
